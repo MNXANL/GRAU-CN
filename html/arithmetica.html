@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>arithmetica</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+</head>
+<body>
+<h1>arithmetica</h1>
+<h2>Contents</h2><ul><li><a href="#node1">Format changes in matlab</a></li></ul><h2><a id="node1">Format changes in matlab</a></h2><p>Some <b>BODY</b> one told <i>me</i> the <code>world</code> is gona roll me</p><p>Default format is []</p><pre class="oct-code">x = 1/7
+
+format long 	<span class="comment">% Set a format for a file from that point onwards</span>
+format short
+format compact
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+disp(<span class="string">'Displaying several formats...'</span>)
+
+<span class="comment">% Formats a variable (x) depending on a certain criterion (e | g | eng | ...)</span>
+<span class="comment">% Note that the last one remains there!!!</span>
+format short e, x
+format short g, x
+format short eng, x 	<span class="comment">%eng stands for 'engineering'</span>
+
+disp(<span class="string">'... same formats but using [long]...'</span>)
+format long e, x
+format long g, x
+format long eng, x
+<span class="comment">%g stands for 'engineering'</span>
+
+publish(<span class="string">'memes.m'</span>)</pre><pre class="oct-code-output">error: publish: FILE does not exist.
+	in:
+
+x = 1/7
+
+format long 	% Set a format for a file from that point onwards
+format short
+format compact
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp('Displaying several formats...')
+
+% Formats a variable (x) depending on a certain criterion (e | g | eng | ...)
+% Note that the last one remains there!!!
+format short e, x
+format short g, x
+format short eng, x 	%eng stands for 'engineering'
+
+disp('... same formats but using [long]...')
+format long e, x
+format long g, x
+format long eng, x
+%g stands for 'engineering'
+
+publish('memes.m')
+
+</pre>
+<footer><hr><a href="http://www.octave.org">Published with GNU Octave 4.2.1</a></footer>
+<!--
+##### SOURCE BEGIN #####
+%% Format changes in matlab
+% Some *BODY* one told _me_ the |world| is gona roll me
+%
+% Default format is []
+x = 1/7
+
+format long 	% Set a format for a file from that point onwards
+format short
+format compact
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp('Displaying several formats...')
+
+% Formats a variable (x) depending on a certain criterion (e | g | eng | ...)
+% Note that the last one remains there!!!
+format short e, x
+format short g, x
+format short eng, x 	%eng stands for 'engineering'
+
+disp('... same formats but using [long]...')
+format long e, x
+format long g, x
+format long eng, x
+%g stands for 'engineering'
+
+publish('memes.m')
+
+
+##### SOURCE END #####
+-->
+</body>
+</html>
