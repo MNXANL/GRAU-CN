@@ -1,0 +1,13 @@
+%% Squares
+% FOUR squares on a plot
+% *Grouping:*
+% Plot 1: 10 -> 50 
+% Plot 2: 10 -> 100
+RU = rand(10000, 1)
+RN = rand(10000, 1)
+subplot(211), plot(RU), title('uniform')
+subplot(212), hist(RU, 100), title('uniform')
+subplot(213), plot(RN), title('normal 10')
+subplot(214), hist(RN, 100), title('norma')
+
+

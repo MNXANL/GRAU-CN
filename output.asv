@@ -1,0 +1,10 @@
+%% Writing outputs
+% Table!
+x = 0 : 0.1 : 1
+y = exp(x);
+table = [x ; y]'
+
+%% File
+%Creation
+file_
+
