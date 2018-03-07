@@ -1,0 +1,256 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Hello world</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-02-21"><meta name="DC.source" content="test_ml.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Hello world</h1><p>Matlab is shit</p><pre class="codeinput">format <span class="string">compact</span>
+x = 2+3
+
+diary <span class="string">memes.txt</span>
+
+vec = 0:10
+</pre><pre class="codeoutput">x =
+     5
+vec =
+     0     1     2     3     4     5     6     7     8     9    10
+</pre><pre class="codeinput">vec2in2 = 0:2:10
+</pre><pre class="codeoutput">vec2in2 =
+     0     2     4     6     8    10
+</pre><pre class="codeinput">w = 10:-3:-10
+</pre><pre class="codeoutput">w =
+    10     7     4     1    -2    -5    -8
+</pre><pre class="codeinput">z = linspace(10, 100, 20)
+</pre><pre class="codeoutput">z =
+  Columns 1 through 7
+   10.0000   14.7368   19.4737   24.2105   28.9474   33.6842   38.4211
+  Columns 8 through 14
+   43.1579   47.8947   52.6316   57.3684   62.1053   66.8421   71.5789
+  Columns 15 through 20
+   76.3158   81.0526   85.7895   90.5263   95.2632  100.0000
+</pre><pre class="codeinput">diary <span class="string">off</span>
+</pre><p>Matrix of just ones</p><pre class="codeinput">a = ones(4)
+</pre><pre class="codeoutput">a =
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+</pre><p>Matrix of just zeroes</p><pre class="codeinput">a = zeros(4)
+</pre><pre class="codeoutput">a =
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+</pre><pre class="codeinput">b = diag(vec2in2)
+</pre><pre class="codeoutput">b =
+     0     0     0     0     0     0
+     0     2     0     0     0     0
+     0     0     4     0     0     0
+     0     0     0     6     0     0
+     0     0     0     0     8     0
+     0     0     0     0     0    10
+</pre><p>Custom matrix</p><pre class="codeinput">CM = [1 2 3 4 ; 4 5 4 5 ; 6 7 8 9 ; 1 2 3 5]
+</pre><pre class="codeoutput">CM =
+     1     2     3     4
+     4     5     4     5
+     6     7     8     9
+     1     2     3     5
+</pre><pre class="codeinput"><span class="comment">%Rows</span>
+CM(1,:)
+
+<span class="comment">%Cols ; watch out for the comma!!!</span>
+CM(:,3)
+
+<span class="comment">%Kill a row/col by assigning it to a empty row/col</span>
+CM(3, :) = []
+
+<span class="comment">%Overwrite a row/col by assigning it to a empty row/col</span>
+CM(3, :) = [3 6 9 12]
+</pre><pre class="codeoutput">ans =
+     1     2     3     4
+ans =
+     3
+     4
+     8
+     3
+CM =
+     1     2     3     4
+     4     5     4     5
+     1     2     3     5
+CM =
+     1     2     3     4
+     4     5     4     5
+     3     6     9    12
+</pre><pre class="codeinput"><span class="comment">%Matrix determinant</span>
+det(a)
+
+<span class="comment">% Rank(B) // Similar rows on mat</span>
+rank(b)
+
+<span class="comment">%Transposability</span>
+c = magic(5)
+</pre><pre class="codeoutput">ans =
+     0
+ans =
+     5
+c =
+    17    24     1     8    15
+    23     5     7    14    16
+     4     6    13    20    22
+    10    12    19    21     3
+    11    18    25     2     9
+</pre><pre class="codeinput"><span class="comment">%Documentation / also on HELP</span>
+doc <span class="string">magic</span> <span class="comment">%square</span>
+
+<span class="comment">% Same but on fancy text, like UNIX's man</span>
+help <span class="string">magic</span> <span class="comment">%square</span>
+</pre><pre class="codeoutput"> MAGIC  Magic square.
+    MAGIC(N) is an N-by-N matrix constructed from the integers
+    1 through N^2 with equal row, column, and diagonal sums.
+    Produces valid magic squares for all N &gt; 0 except N = 2.
+
+    Reference page in Doc Center
+       doc magic
+
+
+</pre><p>Clear workspace</p><pre class="codeinput">clear
+
+<span class="comment">% Clear matrices</span>
+clear <span class="string">a</span>
+clear <span class="string">b</span>
+clear <span class="string">c</span>
+
+<span class="comment">% KILL'EM ALL</span>
+clear <span class="string">all</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Hello world
+% Matlab is shit
+format compact
+x = 2+3
+
+diary memes.txt
+
+vec = 0:10
+%%
+vec2in2 = 0:2:10
+%%
+w = 10:-3:-10
+%%
+z = linspace(10, 100, 20)
+%%
+diary off
+%%
+% Matrix of just ones
+a = ones(4)
+%%
+% Matrix of just zeroes
+a = zeros(4)
+%%
+b = diag(vec2in2)
+%%
+% Custom matrix
+CM = [1 2 3 4 ; 4 5 4 5 ; 6 7 8 9 ; 1 2 3 5]
+
+%%
+%Rows
+CM(1,:)
+
+%Cols ; watch out for the comma!!!
+CM(:,3)
+
+%Kill a row/col by assigning it to a empty row/col
+CM(3, :) = []
+
+%Overwrite a row/col by assigning it to a empty row/col
+CM(3, :) = [3 6 9 12]
+%%
+%Matrix determinant
+det(a)
+
+% Rank(B) // Similar rows on mat
+rank(b)
+
+%Transposability
+c = magic(5)
+%%
+%Documentation / also on HELP
+doc magic %square
+
+% Same but on fancy text, like UNIX's man
+help magic %square
+%%
+% Clear workspace
+clear
+
+% Clear matrices
+clear a
+clear b
+clear c
+
+% KILL'EM ALL
+clear all
+##### SOURCE END #####
+--></body></html>

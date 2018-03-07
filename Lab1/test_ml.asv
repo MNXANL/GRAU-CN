@@ -1,0 +1,12 @@
+format compact
+x = 2+3
+
+diary memes.txt
+
+vec = 0:10
+vec2in2 = 0:2:10
+w = 10:-3:-10
+
+z = linspace(10, 100, 20)
+
+diary off
