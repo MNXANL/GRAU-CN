@@ -1,0 +1,7 @@
+%% GRAU-CN | Lab 2
+
+%% Exercici 5
+# memes
+
+f = @(x) sqrt(x^2 + 1) - 1;
+f = @(x) (x^2)/sqrt(x^2 + 1) - 1;
