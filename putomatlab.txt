@@ -1,9 +1,0 @@
->> x = (1/3)
-x =  0.33333
->> diary on
->> diary putomatlab.txt
->> diary on
->> 
->> 
->> tests
-x =  5
