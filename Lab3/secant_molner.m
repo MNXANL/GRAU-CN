@@ -1,5 +1,5 @@
 function [ root ] = secant_molner( f, a, b, tol, N )
-%Newton_Molner Improved Newton taken from Molner's notes.
+%Secant_Molner Improved Secant taken from Molner's notes.
 %   Detailed explanation goes here
     k = 0;
     

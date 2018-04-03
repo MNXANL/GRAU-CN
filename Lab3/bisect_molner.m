@@ -1,5 +1,5 @@
 function [ root ] = bisect_molner( f, a, b, tol, N )
-%UNTITLED11 Summary of this function goes here
+%Bisect_Molner Improved Bisect taken from Molner's notes.
 %   Detailed explanation goes here
     k = 0;
     while abs(b-a) > eps*abs(b)
