@@ -1,12 +1,15 @@
-%% GRAU-CN | Pràctica A
-% Algorismes -> Exercici 1 (funció)
+%% GRAU-CN | Practica A
+% Algorismes -> Exercici 1 (funci�)
 
 function [retval] = PiFunction (n)
     i = 0;
     m4 = 0;
+    a = -1;
+    b = +1;
+    r = (b-a).*rand(1) + a;
     while (i < n)
-        x = unifrnd(-1.0, 1.0);
-        y = unifrnd(-1.0, 1.0);
+        x = (b-a).*rand(1) + a;
+        y = (b-a).*rand(1) + a;
         circ = (x .^ 2) + (y .^ 2);
         if ( circ <= 1 ) % Unit circle
             m4 = m4 + 4;
