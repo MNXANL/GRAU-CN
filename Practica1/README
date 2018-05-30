@@ -1,0 +1,6 @@
+Els fitxers presents s'han separat per directoris per estructurar de forma millor tots els codis que he emprat.
+
+Els exercicis més rellevant comparteixen el nom de l'apartat, juntament amb el número que identifica el seu subapartat
+La resta de fitxers *.m (Matlab) són auxiliars i ajuden a l'execució d'aquests subapartats (o alguns d'ells).
+
+Si els vols provar, posa'ls tots sota el mateix directori!!!

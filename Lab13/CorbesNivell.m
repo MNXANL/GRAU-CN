@@ -1,0 +1,13 @@
+%% Camp de direccions
+%  
+
+[X, Y] = meshgrid(-2:2:2);
+Z = X .* exp(-X .^ 2 - Y .^ 2);
+[DX, DY] = gradient(Z, 0.2, 0.2);
+
+
+figure
+contour(X,Y,Z)
+hold on
+quiver(X,Y,DX,DY)
+hold off
