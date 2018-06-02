@@ -96,22 +96,33 @@ y =[
     0.3070
     0.1880]
 
-%% Subapartat 1
-n = length(x);
-s = (1 : n)';
-t = (1 : .05 : n)';
-u = splinetx(s,x,t);
-v = splinetx(s,y,t);
-clf reset
-plot(x, y, '.',  u, v, '-');
+% Valors auxiliars
+xmin = min(x); 
+xmax = max(x);
+ymin = min(y); 
+ymax = max(y);
+tol = 0.0005;
+h = 0.001;
+
+%% a)
+Area = (x' * y([2:n 1]) - x([2:n 1])' * y) ./ 2 
 
 
 
-%% Subapartat 2
-% n = length(x);
-% s = (1:n)';
-% t = (1 : .05 : n)';
-% u = pchiptx(s, x, t);
-% v = pchiptx(s, y, t);
-% clf reset
-% plot(x, y, '.',  u, v, '-');
+%% b)
+[u, v] = meshgrid(xmin:h:xmax,ymin:h:ymax)
+k      = inpolygon(u, v,  x, y)
+
+
+%nnz(K) -> nonzeos in K
+AreaGrid =  h^2 * nnz(k)
+
+
+%% c)
+
+
+
+
+dblquad(@(u,v)chi(u,v,x,y),xmin,xmax,ymin,ymax,tol)
+
+fun_k = chi(u,v,x,y)
